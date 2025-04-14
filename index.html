@@ -1,75 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrickSeek</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
-<body class="showCart">
+    <body class="showCart">
+      
+
+  <nav>
+
+
+
      
 
 
 
-    <div class="container">
-        <header>
-            <div class="title">PRODUCT LIST</div>
-            <div class="icon-cart"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
-              </svg>
-              <span>0</span>
+
+
+
+    <div class="nav-container">
+      <div class="logo">BrickSeek</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="menu" id="menu">
+        <div class="dropdown">
+          <a href="#">Deals</a>
+          <div class="dropdown-content">
+            <a href="#">Today's Deals</a>
+            <a href="#">Local Deals</a>
+            <a href="#">Online Deals</a>
+            <a href="#">Used Deals</a>
+            <a href="#">Best Selling Deals</a>
+            <a href="#">Deals by Store</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Categories</a>
+          <div class="dropdown-content">
+            <a href="#">Apparel</a>
+            <a href="#">Appliances</a>
+            <a href="#">Electronics</a>
+            <a href="#">Garden & Outdoors</a>
+            <a href="#">Toys & Games</a>
+            <!-- Add more as needed -->
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Stores</a>
+          <div class="dropdown-content">
+            <a href="#">Walmart</a>
+            <a href="#">Target</a>
+            <a href="#">Amazon</a>
+            <a href="#">Home Depot</a>
+            <a href="#">Lowe's</a>
+            <!-- Add more as needed -->
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Inventory Checkers</a>
+          <div class="dropdown-content">
+            <a href="#">Walmart</a>
+            <a href="#">Target</a>
+            <a href="#">Best Buy</a>
+            <!-- Add more as needed -->
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="#">Community</a>
+          <div class="dropdown-content">
+            <a href="#">Blog</a>
+            <a href="#">Savings Group</a>
+          </div>
+        </div>
+          
+        <a href="#">Login / Sign Up</a>
+      
+
+
+
+
+
+        <div class="container">
+          <header>
+              <div class="title"></div>
+              <div class="icon-cart"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                </svg>
+                <span>0</span>
+                </div>
               </div>
-            </div>
+     
 
-        </header>
 
-        <div class="listProduct">
-            <div class="item">
-                <img src="1.webp" alt="" >
-                <h2>NAME PRODUCT</h2>
-                <div class="price">$200</div>
-                <button class="addCart">
-                    Add to cart
-                </button>
 
-           </div> 
-        </div>
-    </div>
+
+
+
+
+
+
+      </div>
+</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products...">
+      </div>
+      
+    
+  </nav>
+
+
+
+
+
   
+  <div class="cta-container">
+    <h2>Join BrickSeek Today</h2>
+    <p>Get started with a free account to view deals online and in your local stores!</p>
+    <a href="#">Get Started</a>
+  </div>
 
-    <div class="cartTab">
-        <h1>shopping cart</h1>
-        <div class="listCart">
-            <div class="item">
-                <div class="image">
-                    <img src="1.webp" alt="">
 
-                </div>
-                <div class="name">
-                  NAME
-                </div>
-                <div class="totalPrice">
-                    $200
-                </div>
-                <div class="quantity">
-                    <span class="minus"><</span>
-                    <span>1</span>
-                    <span class="plus">></span>
 
-                </div>
 
-            </div>
+
+
+
+  <div class="listProduct">
+    <div class="item">
+        <img src="1.webp" alt="" >
+        <h2>NAME PRODUCT</h2>
+        <div class="price">$200</div>
+        <button class="addCart">
+            Add to cart
+        </button>
+
+   </div> 
+</div>
+</div>
+
+
+<div class="cartTab">
+<h1>shopping cart</h1>
+<div class="listCart">
+    <div class="item">
+        <div class="image">
+            <img src="1.webp" alt="">
 
         </div>
-        <div class="btn">
-            <button class="close">   CLOSE   </button>
-            <button class="checkOut">CHECK</button>
+        <div class="name">
+          NAME
         </div>
+        <div class="totalPrice">
+            $200
+        </div>
+        <div class="quantity">
+            <span class="minus"><</span>
+            <span>1</span>
+            <span class="plus">></span>
+
+        </div>
+
     </div>
 
+</div>
+<div class="btn">
+    <button class="close">   CLOSE   </button>
+    <button class="checkOut">CHECK</button>
+</div>
+</div>
 
 
-<script src="app.js"></script>
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
